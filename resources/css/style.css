@@ -624,6 +624,12 @@ ol, ul {
     padding: 2rem 0;
     margin-bottom: 0;
   }
+
+  #wrapper4 h1 {
+    font-size: 2rem;
+
+  }
+
 }
 
 /* Footer */
