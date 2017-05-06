@@ -121,7 +121,6 @@ ol, ul {
   font-size: 1rem;
 }
 
-
  .logo .colmar {
    font-weight: bold;
  }
@@ -131,6 +130,7 @@ ol, ul {
   font-weight: bold;
 }
 
+/* Header mobile */
 @media only screen and (max-width: 650px) {
   header {
     display: none;
@@ -186,12 +186,13 @@ ol, ul {
   font-family: "Open Sans";
   font-weight: 300;
   color: #d6d675;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #wrapper1 .btn {
   background-color: #34303d;
   padding: 0.75rem 2rem;
+  margin: 1rem;
   width: 85%;
   text-align: center;
   transition: background-color 200ms linear 0.05s;
@@ -240,7 +241,7 @@ ol, ul {
 
   #wrapper1 .narrative h2 {
     display: block;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     text-align: center;
   }
@@ -323,6 +324,7 @@ ol, ul {
 #wrapper2 .info-text a {
   text-decoration: none;
   font-size: 0.75rem;
+  color: black;
 }
 
 #wrapper2 .info-text a:hover {
@@ -348,12 +350,12 @@ ol, ul {
     width: 100%;
     display: block;
     padding: 1rem;
-    align-content: center;
+    text-align: center;
   }
 
   #wrapper2 .info-image {
     max-width: 100%;
-    max-height: 220px;
+    max-height: 260px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -361,7 +363,7 @@ ol, ul {
  #wrapper2 .info-main h1 {
     color: #555b77;
     font-family: : "Yeseva One", serif;
-    text-align; center;
+    text-align: center;
   }
 
   #wrapper2 .info-image img {
@@ -384,7 +386,6 @@ ol, ul {
   #wrapper2 .lecture {
     background-color: white;
     padding-bottom: 0;
-
   }
 
 }
