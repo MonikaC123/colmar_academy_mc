@@ -1,0 +1,659 @@
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* latin */
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yeseva One Regular'), local('YesevaOne-Regular'), url(https://fonts.gstatic.com/s/yesevaone/v11/wVgDKaRrT3DN9VGcOY4orwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* Universal Styles */
+html {
+  font-family: "Open Sans", verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  font-family: "Open Sans", sans-serif;
+  color: #67BB96;
+}
+
+a:visited {
+  color: #371C50;
+}
+
+
+
+/* Header */
+header {
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: whitesmoke;
+  margin-top: -1rem;
+}
+
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1rem;
+  text-decoration: none;
+  padding-right: 1rem;
+
+}
+
+nav a {
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: "Open Sans", verdana, sans-serif;
+  font-weight: 600;
+  color: #858687;
+  padding: 0.5rem;
+  transition: color 200ms 100ms ease-in-out,
+    background-color 200ms 100ms ease-in-out;
+
+}
+
+nav a:hover {
+  color: #445791;
+  font-family: "Open Sans";
+  background-color: #d6d675;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.logo {
+  flex-grow: 1;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+}
+
+
+ .logo .colmar {
+   font-weight: bold;
+ }
+
+.logo .academy {
+  color: #4e65aa;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    background-color: white;
+    height:4rem;
+    width: 100%;
+  }
+
+  .mobilenav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px;
+  }
+
+  .mobilenav img {
+    height: 60px;
+    width: auto;
+  }
+}
+
+/* Wrapper1 -LearnSomethingNew- */
+#wrapper1 {
+  padding: 3rem 1rem 2rem 1.5rem;
+  background-color: #445791;
+}
+
+#wrapper1 img {
+  width: 60%;
+  height: auto;
+  margin: 2rem 2.5rem 0 0;
+}
+
+#wrapper1 .flexbox {
+  flex-direction: column;
+}
+
+#wrapper1 h1 {
+  display: block;
+  font-size: 350%;
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  color: whitesmoke;
+  margin: 1.5rem 0;
+  line-height: 4rem;
+}
+
+#wrapper1 h2 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #d6d675;
+  font-size: 1.2rem;
+}
+
+#wrapper1 .btn {
+  background-color: #34303d;
+  padding: 0.75rem 2rem;
+  width: 85%;
+  text-align: center;
+  transition: background-color 200ms linear 0.05s;
+}
+
+#wrapper1 .btn a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+#wrapper1 .btn:hover {
+  background-color: #d6d675;
+  color: #445791;
+}
+
+#wrapper1 .btn a:hover {
+  color: #445791;
+}
+
+/* Wrapper Mobile */
+@media only screen and (max-width: 650px) {
+  #wrapper1 {
+    display: block;
+    padding: 0;
+  }
+
+  #wrapper1 img {
+    height: auto;
+    width: 100%;
+  }
+
+  #wrapper1 .narrative {
+    display: block;
+    padding: 2rem 1rem;
+  }
+
+  #wrapper1 .narrative h1 {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: normal;
+    text-align: center;
+  }
+
+  #wrapper1 .narrative h2 {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  #wrapper1 .btn {
+    background-color: #34303d;
+    padding: 1rem 2rem;
+    width: 70%;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  #wrapper1 .btn:active {
+    background-color: #67BB96;
+    color: #34303d;
+  }
+}
+
+/* Wrapper2 -KeepPracticing- */
+#wrapper2 {
+  padding-bottom: 2rem;
+  background-color: whitesmoke;
+}
+
+
+#wrapper2 .info-main {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#wrapper2 .info-main img {
+  width: 100%;
+  height: auto;
+}
+
+#wrapper2 h1 {
+  font-weight: 400;
+  font-family: "Yeseva One", sans-serif;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  color: #445791;
+  line-height: 3rem;
+}
+
+#wrapper2 .info-main blockquote {
+  padding-bottom: 2rem;
+}
+#wrapper2 .info-list {
+  flex-direction: column;
+  width: 40%;
+  border-left: 1px solid #D7DBDD;
+}
+
+#wrapper2 .info-image {
+  max-width: 35%;
+  margin: 1rem;
+}
+
+#wrapper2 .info-image img {
+  width: 100%;
+  height: auto;
+}
+
+#wrapper2 .info-text {
+  max-width: 50%;
+  padding: 1rem 0;
+}
+
+#wrapper2 .info-text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #465887;
+}
+#wrapper2 .info-text p {
+  margin-bottom: 0.5rem;
+}
+#wrapper2 .info-text a {
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+#wrapper2 .info-text a:hover {
+  text-decoration: underline;
+}
+
+#wrapper2 .orientation {
+  border-bottom: 1px solid #D7D8DD;
+}
+
+#wrapper2 .lecture {
+  background-color: #d6d675;
+}
+
+/* wrapper2 Mobile */
+@media only screen and (max-width: 650px) {
+
+  #wrapper2 .info-main {
+    display: none;
+  }
+
+  #wrapper2 .info-list {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    align-content: center;
+  }
+
+  #wrapper2 .info-image {
+    max-width: 100%;
+    max-height: 220px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+ #wrapper2 .info-main h1 {
+    color: #555b77;
+    font-family: : "Yeseva One", serif;
+    text-align; center;
+  }
+
+  #wrapper2 .info-image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #wrapper2 .info-text {
+    display: block;
+    max-width: 80%;
+    padding: 1rem 0 1rem  1rem ;
+
+  }
+
+  #wrapper2 .block {
+    display: block;
+  }
+
+  #wrapper2 .lecture {
+    background-color: white;
+    padding-bottom: 0;
+
+  }
+
+}
+/* Wrapper3 -StartLearning-*/
+#wrapper3 {
+  background-color: #445791;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0px;
+}
+
+#wrapper3 .start h2 {
+  width: 100%;
+  padding: 0 0 32px 0;
+  font-size: 3rem;
+  font-family: "Yeseva One", sans-serif;
+  color: whitesmoke;
+}
+
+#wrapper3 .row {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+#wrapper3 .course-block {
+  width: 25%;
+  margin: 0 1rem 1rem 2rem;
+  background-color: white;
+  transition: background-color 300ms 200ms ease-in-out;
+}
+
+#wrapper3 .course-block:hover {
+  background-color: #d6d675;
+}
+
+#wrapper3 .course-image {
+  overflow: hidden;
+  max-height: 220px;
+}
+
+#wrapper3 .course-image img {
+  max-height: 13.75rem;
+  width: 100%;
+}
+
+#wrapper3 p.title {
+  font-variant: small-caps;
+}
+#wrapper3 .course-description {
+  padding: 0 16px 24px 16px;
+  transition: background-color 300ms 200ms ease-in-out;
+}
+
+#wrapper3 .course-description:hover {
+  background-color: #d6d675;
+}
+
+#wrapper3 .course-description h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 16px 0 8px 0;
+  color: #445791;
+}
+
+
+#wrapper3 .course-description p {
+  font-size: 18px;
+
+}
+#wrapper3 .course-description .title {
+  padding: 8px 0px;
+}
+ #wrapper3 .course-description span {
+   padding: 8px 0;
+ }
+
+#wrapper3 .course-mobile {
+  display: none;
+}
+
+/* Courses Mobile */
+@media only screen and (max-width: 650px) {
+  #wrapper3 {
+    background-color: white;
+    padding-top: 1rem;
+
+    border-top: 1px solid gray;
+  }
+
+  #wrapper3 .start h2 {
+    width: 100%;
+    font-size: 2.25rem;
+    font-family: "Yeseva One", sans-serif;
+    color: #445791;
+  }
+
+  #wrapper3 .row {
+    display: none;
+  }
+
+  #wrapper3 .course-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 80%;
+  }
+
+  #wrapper3 .course-mobile .mobile-block {
+    background-color: #465887;
+    width: 100%;
+    margin: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  #wrapper3 .course-mobile .mobile-block h4 {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+  }
+
+
+}
+
+/* Wrapper4 -Thesis- */
+#wrapper4 {
+  padding: 2rem 0;
+  background-color: whitesmoke;
+}
+
+#wrapper4 .thesis-title {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#wrapper4 h1 {
+  font-size: 3rem;
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  color: #445791;
+}
+
+#wrapper4 .thesis-main {
+  width: 60%;
+  padding: 0 1rem 0 2rem;
+}
+
+#wrapper4 .thesis-main .video {
+  padding-bottom: 2rem;
+}
+
+#wrapper4 .thesis.flexbox {
+  align-items: flex-start;
+}
+
+#wrapper4 .thesis-main h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: #445791;
+}
+
+#wrapper4 .thesis-main blockquote {
+  padding-bottom: 2rem;
+}
+
+#wrapper4 .thesis-list {
+  flex-direction: column;
+  width: 40%;
+}
+
+#thesis .thesis-image {
+  max-width: 35%;
+  margin: 1rem;
+}
+
+#wrapper4 .thesis-image img {
+  width: 100%;
+  height: auto;
+
+}
+
+#wrapper4 .thesis-text {
+  max-width: 50%;
+  padding: 1rem 1rem;
+}
+
+#wrapper4 .thesis-text h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+
+}
+
+#wrapper4 .thesis-text p {
+  margin-bottom: 8px;
+}
+
+#wrapper4 .fisma {
+  background-color: #D7D8DD;
+}
+
+#wrapper4 .now-then {
+  background-color: #d6d675;
+}
+
+/* Thesis Mobile */
+@media only screen and (max-width: 650px) {
+  #wrapper4 {
+    padding: 0;
+    border-top: 1px solid gray;
+  }
+
+  #wrapper4 .thesis-narrative {
+    display: none;
+  }
+
+  #wrapper4 .thesis-main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  #wrapper4 .thesis-list {
+    display: none;
+  }
+
+  #wrapper4 .thesis-title {
+    padding: 2rem 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  border-top: 1px solid black;
+  height: 3rem;
+  font-size: 0.75rem;
+  background-color: whitesmoke;
+}
+
+.legal {
+  flex-grow: 1;
+  padding-left: 1.5rem;
+}
+
+.footnav span {
+  padding: 8px;
+}
+
+.footnav a {
+  text-decoration: none;
+}
+
+.footnav i {
+  padding-right: 5px;
+}
+
+/* Footer Mobile */
+@media only screen and (max-width: 650px) {
+  footer .footnav {
+    display: none;
+  }
+}
