@@ -232,7 +232,7 @@ ol, ul {
 
   #wrapper1 .narrative h1 {
     display: block;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
     line-height: normal;
@@ -253,7 +253,6 @@ ol, ul {
     margin-bottom: 2rem;
     text-align: center;
     color: white;
-    font-weight: bold;
   }
 
   #wrapper1 .btn:active {
@@ -362,7 +361,7 @@ ol, ul {
 
  #wrapper2 .info-main h1 {
     color: #555b77;
-    font-family: : "Yeseva One", serif;
+    font-family: "Yeseva One", serif;
     text-align: center;
   }
 
@@ -478,7 +477,7 @@ ol, ul {
 
   #wrapper3 .start h2 {
     width: 100%;
-    font-size: 2.25rem;
+    font-size: 2.2rem;
     font-family: "Yeseva One", sans-serif;
     color: #445791;
   }
@@ -611,10 +610,8 @@ ol, ul {
 
   #wrapper4 .thesis-main {
     width: 100%;
-    padding: 0;
-    margin: 0;
-  }
 
+  }
 
   #wrapper4 .thesis-list {
     display: none;
@@ -626,8 +623,7 @@ ol, ul {
   }
 
   #wrapper4 h1 {
-    font-size: 2rem;
-
+    font-size: 2.2rem;
   }
 
 }
